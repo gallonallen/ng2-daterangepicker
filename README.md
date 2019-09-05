@@ -20,9 +20,9 @@ Please note and install the following peerDependencies if necessary for your set
 
 ```json
 "peerDependencies": {
-"@types/jquery": "^3.2.12",
-"jquery": "^3.2.1",
-"moment": "^2.19.1"
+    "@types/jquery": "^3.2.12",
+    "jquery": "^3.2.1",
+    "moment": "^2.19.1"
 }
 ```
 

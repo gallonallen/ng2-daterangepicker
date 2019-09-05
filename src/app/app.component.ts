@@ -15,10 +15,12 @@ export class AppComponent implements OnInit {
         startDate: moment().subtract(5, 'day'),
         endDate: moment(),
         isInvalidDate: function(date) {
-          if (date.isSame('2017-09-26', 'day'))
-            return 'mystyle';
-          return false;
-      	}
+            if (date.isSame('2017-09-26', 'day')) {
+                return 'mystyle';
+            }
+
+            return false;
+        }
     }
 
     public picker2 = {
@@ -43,7 +45,7 @@ export class AppComponent implements OnInit {
         this.daterangepickerOptions.settings = {
             locale: { format: 'YYYY-MM-DD' },
             alwaysShowCalendars: false,
-            "opens": "right",
+            'opens': 'right',
             ranges: {
                 'Last Month': [moment().subtract(1, 'month'), moment()],
                 'Last 3 Months': [moment().subtract(4, 'month'), moment()],
@@ -70,7 +72,7 @@ export class AppComponent implements OnInit {
         this.picker1.opens = direction;
     }
 
-    public applyDatepicker(event:any) {
+    public applyDatepicker(event: any) {
         console.log('applied');
         console.log(event);
     }
